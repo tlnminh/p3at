@@ -10,6 +10,7 @@
 #define KEYCODE_D 0x42
 #define KEYCODE_Q 0x71
 #define KEYCODE_SPACE 0x20
+#define KEYCODE_DEMO 0x01
 
 class TeleopRosAria
 {
