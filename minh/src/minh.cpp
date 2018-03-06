@@ -11,32 +11,7 @@
 #define KEYCODE_Q 0x71
 #define KEYCODE_SPACE 0x20
 #define KEYCODE_DEMO 0x01
-
-class TeleopRosAria
-{
-  public:
-    TeleopRosAria();
-    void keyLoop();
-  private:
-    ros::NodeHandle nh_;
-    double linear_, angular_, l_scale_, a_scale_;
-    ros::Publisher twist_pub_;
-};
-TeleopRosAria::TeleopRosAria():
-  linear_(0),
-  angular_(0),
-  l_scale_(2.0),
-  a_scale_(2.0)
-{
-  nh_.param("scale_angular", a_scale_, a_scale_);
-  nh_.param("scale_linear", l_scale_, l_scale_);
-  twist_pub_ = nh_.advertise<geometry_msgs::Twist>("RosAria/cmd_vel", 1);
-}
-int kfd = 0;
-struct termios cooked, raw;
-void quit(int sig)
-{
-  tcsetattr(kfd, TCSANOW, &cooked); 
+ 
   /*
   int tcsetattr(int fildes, int optional_actions, const struct termios *termios_p);
 
