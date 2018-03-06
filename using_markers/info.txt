@@ -1,0 +1,1 @@
+this pkg is created for understanding rviz. links: http://wiki.ros.org/rviz

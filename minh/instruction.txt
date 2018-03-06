@@ -1,0 +1,8 @@
+1. roscore
+2. run aria
+///// for real robot
+optional: sudo chmod 777 -R /dev/ttyUSB0
+rosrun rosaria RosAria _port:=/dev/ttyUSB0
+///// for mobilesim:
+rosrun rosaria RosAria _port:=localhost:8101
+run the node:

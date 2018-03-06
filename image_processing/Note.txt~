@@ -1,0 +1,14 @@
+copy code chay duoc luon
+https://docs.opencv.org/2.4/doc/tutorials/introduction/display_image/display_image.html
+
+code C++ la quat luon
+
+
+RED: 	H		S		V
+	0-0		146-255		132-255
+	
+BLUE	59-130		106-255		98-164
+
+
+
+
